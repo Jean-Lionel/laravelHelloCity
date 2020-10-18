@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>About Us | Hello City</title>
+        <title>Hello City</title>
 
         <!-- Fonts -->
      
@@ -18,12 +18,16 @@
     </head>
     <body >
 
-        <h1>Hello from BUJUMBURA</h1>
-        <p>It is currentkly {{ date('h:i A')}}</p>
+        <p>Built with &heart; Jean Lionel</p>
+
+        <p>
+            <a href="/">Revenir vers la page d'accueil</a>
+        </p>
+
        
 
        <footer>
-           <p>&copy;Copyright {{ date('Y')}} &middot; <a href="/about-us">About as</a> </p>
+           <p>&copy;Copyright {{ date('Y')}} &middot; <a href="#">About as</a> </p>
        </footer>
     </body>
 </html>
