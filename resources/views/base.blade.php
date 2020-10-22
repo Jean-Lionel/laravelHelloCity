@@ -4,30 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello City</title>
+        <title>@yield('title','Jean LIONEL')</title>
 
         <!-- Fonts -->
-     
- 
 
         <style>
             body {
                 font-family: 'Nunito';
+               
             }
         </style>
     </head>
     <body >
 
-        <p>Built with &heart; Jean Lionel</p>
-
-        <p>
-            <a href="/">Revenir vers la page d'accueil</a>
-        </p>
-
+        @yield('content')
        
 
        <footer>
-           <p>&copy;Copyright {{ date('Y')}} &middot; <a href="#">About as</a> </p>
+           <p>&copy;Copyright {{ date('Y')}} &middot; <a href="/about-us">About as</a> </p>
        </footer>
     </body>
 </html>
