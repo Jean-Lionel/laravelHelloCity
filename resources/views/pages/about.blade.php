@@ -1,12 +1,12 @@
 @extends('base')
 
-@section('title','About')
+@section('title','About As')
 
 @section('content')
     {{-- expr --}}
      <p>Built with 💄 Jean Lionel</p>
 
-     <img src="/images/burundi.png"  width="200" alt="Le drapeau du burundi">
+     <img src="{{ asset('images/burundi.png') }}"  width="200" alt="Le drapeau du burundi">
  
 
         <p>
