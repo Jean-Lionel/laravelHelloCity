@@ -4,9 +4,11 @@
 
 @section('content')
     {{-- expr --}}
-     <p>Built with 💄 Jean Lionel</p>
+    
 
      <img src="{{ asset('images/burundi.png') }}"  width="200" alt="Le drapeau du burundi">
+
+      <p>Built with <span class="text-pink-500">&hearts;</span> Jean Lionel</p>
  
 
         <p>

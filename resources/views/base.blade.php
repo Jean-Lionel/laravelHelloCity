@@ -7,28 +7,29 @@
         <title>@yield('title','Jean LIONEL')</title>
 
         <!-- Fonts -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
-        <style>
-            body {
-                font-family: 'Nunito';
-               
-            }
-        </style>
+       
     </head>
-    <body >
+    <body class="flex py-8 flex-col items-center justify-between min-h-screen">
 
-        @yield('content')
+        <main role="main" class="flex flex-col justify-center items-center">
+             @yield('content')
+            
+        </main>
+
+       
        
 
        <footer>
-           <p>&copy;Copyright {{ date('Y')}} &middot;
+           <p class="text-grey-500">&copy;Copyright {{ date('Y')}} &middot;
 
 
 
     
             @if (!Route::is('about'))
                 {{-- expr --}}
-                    <a href="{{ route('about') }}">About as</a>
+                    <a href="{{ route('about') }}" class="text-indigo-500 hover:text-indigo-500 underline">About as</a>
             @endif
 
               </p>
