@@ -21,7 +21,17 @@
        
 
        <footer>
-           <p>&copy;Copyright {{ date('Y')}} &middot; <a href="/about-us">About as</a> </p>
+           <p>&copy;Copyright {{ date('Y')}} &middot;
+
+
+
+    
+            @if (!Route::is('about'))
+                {{-- expr --}}
+                    <a href="{{ route('about') }}">About as</a>
+            @endif
+
+              </p>
        </footer>
     </body>
 </html>
