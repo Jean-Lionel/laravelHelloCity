@@ -1,6 +1,6 @@
-@extends('base')
+@extends('layouts.base',['title' => ' About Us'])
 
-@section('title','About As')
+
 
 @section('content')
     {{-- expr --}}

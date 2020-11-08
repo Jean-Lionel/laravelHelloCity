@@ -1,5 +1,4 @@
-@extends('base')
-@section('title','Home')
+@extends('layouts.base')
 
 @section('content')
     {{-- expr --}}

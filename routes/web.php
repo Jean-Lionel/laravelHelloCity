@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',function(){
 
-	return view('pages.home');
 
-})->name('home');
+Route::view('/','pages.home')->name('home');
+
+
 
 
 Route::get('about',function(){
@@ -14,3 +14,9 @@ Route::get('about',function(){
 	return view('pages.about');
 
 })->name('about');
+
+
+Route::get('help', function(){
+	return view('pages.help');
+
+})->name('help');
